@@ -49,7 +49,7 @@ pipeline {
             
           },
           "Monitor for CR Approval": {
-            sh 'echo "" >> /dev/null'
+            input(message: 'Wait for input', id: 'Input1')
             
           }
         )
